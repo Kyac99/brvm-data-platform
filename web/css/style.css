@@ -1,0 +1,135 @@
+/* BRVM Data Platform - Styles principaux */
+
+/* Variables */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #0dcaf0;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+}
+
+/* Styles globaux */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* En-tête */
+.navbar-brand {
+    font-weight: 600;
+}
+
+header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Sections */
+section {
+    scroll-margin-top: 60px;
+}
+
+/* Cartes */
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+/* Tableaux */
+.table th {
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Badges */
+.badge-up {
+    background-color: var(--success-color);
+}
+
+.badge-down {
+    background-color: var(--danger-color);
+}
+
+/* Barres de recherche */
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Animations */
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Indicateurs de marché */
+#market-status .badge {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.75rem;
+}
+
+/* Tableaux de données */
+.table-responsive {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+/* Surbrillance des lignes de tableau au survol */
+.table-hover tbody tr:hover {
+    background-color: rgba(13, 110, 253, 0.05);
+}
+
+/* Styliser les variations positives et négatives */
+.positive-change {
+    color: var(--success-color);
+}
+
+.negative-change {
+    color: var(--danger-color);
+}
+
+/* Footer */
+footer a {
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+footer a:hover {
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .table-responsive {
+        max-height: 300px;
+    }
+}
+
+/* Styles des graphiques */
+.chart-container {
+    position: relative;
+    height: 300px;
+}
